@@ -37,6 +37,16 @@ okhttp_version = "5.0.0-alpha.2"
 
 
 
+// Dagger
+implementation "com.google.dagger:dagger:$version"
+implementation "com.google.dagger:dagger-android:$version"
+implementation "com.google.dagger:dagger-android-support:$version"
+kapt "com.google.dagger:dagger-compiler:$version"
+kapt "com.google.dagger:dagger-android-processor:$version"
+kapt "com.google.dagger:dagger-android-support:$version"
+
+
+
 // Dagger - Hilt (need plugin)
 implementation "com.google.dagger:hilt-android:$dagger_hilt_version"
 kapt "com.google.dagger:hilt-android-compiler:2.37"
