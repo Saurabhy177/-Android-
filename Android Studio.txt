@@ -1,0 +1,69 @@
+ANDROID STUDIO PATHS:
+To run shell commands in android studio, select the below path:
+cd C:\Users\hp\AppData\Local\Android\sdk\platform-tools
+
+cd C:\Users\hp\Gitlab\Skuad\zenius-android
+
+cd C:\Users\hp\Gitlab\Skuad\zenius-android\rts-droid
+
+
+
+FIREBASE ANALYTICS:
+
+To connect device in debug view for firebase analytics, use below command:
+adb shell setprop debug.firebase.analytics.app [package_name]
+
+* If adb command is not found, then add path in windows and do the following for iOS:
+    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+    - Copy and paste the first line on the same terminal window, then hit enter: eval $(/opt/homebrew/bin/brew shellenv)
+    - brew install android-platform-tools
+    - Check: adb devices
+    - adb shell setprop debug.firebase.analytics.app [package_name]
+
+pkg name for dev - net.zenius.mobiletest
+pkg name for staging - net.zenius.mobiledev
+pkg name for prod - net.zenius.mobile
+
+adb shell setprop debug.firebase.analytics.app net.zenius.mobiledev
+adb shell setprop debug.firebase.analytics.app net.zenius.mobiletest
+adb shell setprop debug.firebase.analytics.app net.zenius.mobile
+
+
+GRAPHQL API:
+Dev: http://app-graphql.dev.zeniusnet.com/graphql
+Staging: http://app-graphql.staging.zeniusnet.com/graphql
+Production: https://graphql.zenius.net/graphql
+
+To Download Schema:
+apollo schema:download --endpoint=https://app-graphql.dev.zeniusnet.com/graphql schema.json
+
+
+
+REST API:
+PROD url:  https://kong.zenius.net/vectorsearch
+DEV url:  https://kong-dev.zeniusnet.com/vectorsearch
+
+
+
+LMS:
+https://lms.zenius.net/curriculum
+https://zbackoffice.herokuapp.com/curriculum
+
+
+//// For searching any video with given player Id from Akamai:
+lms.zenius.net/preview/[playerid]+lu
+
+
+/// In order to checkout to an old commit
+git checkout -b aNewBranch SHA1 
+
+
+LMS -> Paywall -> Angotta -> search email and copy user id from http link
+
+dev.zeniusnet.com //dev
+zeniusnet.com // stag
+zenius.net // prod
+
+
+git cherry-pick <commit>
+

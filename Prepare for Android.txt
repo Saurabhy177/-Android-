@@ -1,0 +1,52 @@
+Intent Filter
+Launch Mode
+Serializable
+Services
+Work Manager, Job Scheduler
+Room
+Navigation
+Fragment
+ViewModel
+Livedata
+Dagger 2
+View Binding
+Data binding
+KTX
+Immutability
+Singleton
+Memory Management - Memory Leaks ( detect and prevent )
+RecyclerView recycle pool
+Handlers, Message Queue
+Retrofit
+Graphql
+Notifications
+white_check_mark
+eyes
+raised_hands
+
+
+
+
+
+1:32
+val vs var
+lazy vs lateinit
+Data classes
+Sealed classes
+init block
+constructors
+extension fuctions
+higher order fucntion
+inline function
+infix function
+suspend function
+corrutienes
+flow
+scope functions
+1:33
+ViewModel internal working (Why viewmodel not lose the content in case of orientation change)
+image caching (storage handling, extensions, lru, caching process, background queue handling etc)
+download manager (pause, cancel download, showing its ui on multiple views, resuming download, background download, memory constraints handling)
+Design image loading library
+Design Patterns with real time and project examples
+MVVM, Clean Architecture
