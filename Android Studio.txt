@@ -14,7 +14,7 @@ To connect device in debug view for firebase analytics, use below command:
 adb shell setprop debug.firebase.analytics.app [package_name]
 
 * If adb command is not found, then add path in windows and do the following for iOS:
-    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     - Copy and paste the first line on the same terminal window, then hit enter: eval $(/opt/homebrew/bin/brew shellenv)
     - brew install android-platform-tools
     - Check: adb devices
