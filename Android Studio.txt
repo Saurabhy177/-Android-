@@ -20,50 +20,12 @@ adb shell setprop debug.firebase.analytics.app [package_name]
     - Check: adb devices
     - adb shell setprop debug.firebase.analytics.app [package_name]
 
-pkg name for dev - net.zenius.mobiletest
-pkg name for staging - net.zenius.mobiledev
-pkg name for prod - net.zenius.mobile
-
-adb shell setprop debug.firebase.analytics.app net.zenius.mobiledev
-adb shell setprop debug.firebase.analytics.app net.zenius.mobiletest
-adb shell setprop debug.firebase.analytics.app net.zenius.mobile
-
-
-GRAPHQL API:
-Dev: http://app-graphql.dev.zeniusnet.com/graphql
-Staging: http://app-graphql.staging.zeniusnet.com/graphql
-Production: https://graphql.zenius.net/graphql
-
 To Download Schema:
 apollo schema:download --endpoint=https://app-graphql.dev.zeniusnet.com/graphql schema.json
 
 
-
-REST API:
-PROD url:  https://kong.zenius.net/vectorsearch
-DEV url:  https://kong-dev.zeniusnet.com/vectorsearch
-
-
-
-LMS:
-https://lms.zenius.net/curriculum
-https://zbackoffice.herokuapp.com/curriculum
-
-
-//// For searching any video with given player Id from Akamai:
-lms.zenius.net/preview/[playerid]+lu
-
-
 /// In order to checkout to an old commit
 git checkout -b aNewBranch SHA1 
-
-
-LMS -> Paywall -> Angotta -> search email and copy user id from http link
-
-dev.zeniusnet.com //dev
-zeniusnet.com // stag
-zenius.net // prod
-
 
 git cherry-pick <commit>
 
