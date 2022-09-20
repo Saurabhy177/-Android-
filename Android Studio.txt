@@ -14,11 +14,20 @@ To connect device in debug view for firebase analytics, use below command:
 adb shell setprop debug.firebase.analytics.app [package_name]
 
 * If adb command is not found, then add path in windows and do the following for iOS:
-    - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    - Copy and paste the first line on the same terminal window, then hit enter: eval $(/opt/homebrew/bin/brew shellenv)
-    - brew install android-platform-tools
-    - Check: adb devices
-    - adb shell setprop debug.firebase.analytics.app [package_name]
+    1. Install brew:
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+       OR
+       If some error happens in brew installation, then uninstall brew:
+        - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+        - git config --global core.compression 0
+        - git config --global http.postBuffer 1048576000
+    2. Copy and paste the first line on the same terminal window, then hit enter: eval $(/opt/homebrew/bin/brew shellenv)
+    3. brew install android-platform-tools
+    4. Check: adb devices
+    5. adb shell setprop debug.firebase.analytics.app [package_name]
+    
+* Install GraphQL GUI Setup:
+    brew install --cask graphiql
 
 To Download Schema:
 apollo schema:download --endpoint=https://app-graphql.dev.zeniusnet.com/graphql schema.json
